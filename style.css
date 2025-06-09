@@ -374,8 +374,6 @@ header ul a:hover{
     bottom: 35%;
 }
 
-
-
 .my-project{
     display: flex;
     flex-direction: column;
@@ -402,23 +400,23 @@ header ul a:hover{
     align-items: center;
     justify-content: center;
     width: 50%;
-    mix-blend-mode:exclusion;
+    mix-blend-mode: exclusion;
     position: relative;
     cursor: pointer;
     transition: 0.5s;
     min-width: 400px;
-
 }
 
-.project-vidbox video{
-    object-fit: cover;
+/* Теперь для изображений */
+.project-img {
     width: 100%;
-    box-shadow: 0 0 10px lightgray;
     border-radius: 20px;
+    box-shadow: 0 0 10px lightgray;
     transition: 0.5s;
+    object-fit: cover;
 }
 
-.project-card video:hover{
+.project-img:hover {
     box-shadow: 0 0 25px rgb(255, 255, 255);
 }
 
@@ -474,26 +472,12 @@ header ul a:hover{
     height: 100px;
 }
 
-.hover-sign::before,
-.hover-sign::after {
-    content: "👆";
-    text-align: center;
-    position: absolute;
-    font-size: 50px;
-    top: 20%;
-    left: 40%;
-    border-radius: 40px;
-    animation: hover-animation 4s ease-in-out infinite;
-
-}
-
 .hover-sign.active{
     display: none;
 }
 
 @keyframes hover-animation {
   0% {
-    /* top:20%; */
     box-shadow: 0 0 5px rgb(255, 255, 255);
     transform: translate(100%, 50%) rotate(30deg);
   }
@@ -503,8 +487,6 @@ header ul a:hover{
     transform: translateX(80%, 80%) rotate(20deg);
   }
 }
-
-
 
 
 /* Skills section */
